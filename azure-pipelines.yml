@@ -43,3 +43,6 @@ steps:
     imageName: '$(ImageName):$(Build.BuildId)'
 
 - task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'tailwindtradersrq7ht2uk6jv44' 
