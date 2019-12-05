@@ -41,3 +41,5 @@ steps:
     azureContainerRegistry: '$(acr).azurecr.io'
     command: 'Push an image'
     imageName: '$(ImageName):$(Build.BuildId)'
+
+- task: PublishBuildArtifacts@1
